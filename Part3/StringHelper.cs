@@ -13,7 +13,7 @@ namespace Part3
        
         public static string GetNameFromEmail(string email)
         {
-            email = email.TrimEnd('c','o','m','.');
+            email = email[..^4];
             return email;
         }
     }
