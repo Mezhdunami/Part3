@@ -6,55 +6,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        TVShow show1 = new TVShow
-        {
-            Name = "Simpsons",
-            Channel = 36
-        };
-
-        TVShow show2 = new TVShow
-        {
-            Name = "Adams Family",
-            Channel = 69
-            
-        };
-
-        Person person1 = new Person
-        {
-            Name = "Tom",
-            Surname = "Riddle",
-            FavoriteTVShow = show2,
-        };
-
-        Person person2 = new Person
-        {
-            Name = "Maria",
-            Surname = "Magdalena",
-            FavoriteTVShow = show1,
-
-        };
-
-        // Print out TVshow info of both persons
-        person1.PrintShowInfo();
-        person2.PrintShowInfo();
-
-        // One day Maria was tired of Simpsons and started to watch Adams Family as well as Tom.
-        person2.SetFavoriteTVShow(show2);
-
-        // Print out Maria's favorite TVshow
-        person2.PrintShowInfo();
-
-        // She set 68 for her favorite TVShow, which was Adams Family
-        Console.WriteLine("\nMaria set 68 for her favorite TVShow, which was Adams Family\n");
-        person2.SetChannel(68);
-
-        // Print out Maria's favorite TVshow - should be 68
-        person2.PrintShowInfo();
-
-        // Maria was very nervous that Tom could not guess that the channel was changed.
-        // And she asked Tom to show his TVshow info. She was very happy when she saw
-        // that he still watched his favorite show on channel 69
-        person1.PrintShowInfo();
+        Person person1 = new Person("Alex");
+        Person person2 = new Person("Goku");
+        Person person3 = new Person("Max");
+        Console.WriteLine("Person count is:" + Person.personCount);
+        Person person4 = new Person("Suzy");
+        Person person5 = new Person("Mazda");
+        Console.WriteLine("Person count is:" + Person.personCount);
 
     }
 }

@@ -1,11 +1,6 @@
-﻿using Part3;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Security.Cryptography.X509Certificates;
 
-namespace Part3
+namespace part1
 {
     public class Person
     {
@@ -19,8 +14,7 @@ namespace Part3
             Name = name;
             personCount++;
         }
-
+            
 
     }
 }
-
