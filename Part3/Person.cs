@@ -7,32 +7,29 @@ using System.Threading.Tasks;
 
 namespace Part3
 {
-    public class Person
+    public struct Person
     {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int Age { get; set; }
-        public Animal Pet { get; set; }
-        public TVShow FavoriteTVShow { get; set; }
+        public TVShow FavoriteTVShow;
 
 
 
 
-        public void SetFavoriteShow(TVShow favShow)
+        public void SetFavoriteTVShow(TVShow showName)
         {
-            FavoriteTVShow = favShow;
-          
+            FavoriteTVShow = showName;
+            
         }
-        public void SetChannel(int setChannel)
+
+        public void SetChannel(int channel)
         {
-
-            FavoriteTVShow.ChannelNumber = setChannel;
-
-   
+            FavoriteTVShow.Channel = channel;
         }
+
         public void PrintShowInfo()
         {
-            Console.WriteLine($"{Name} info:\nFavorite Show: {FavoriteTVShow.Name}\nChannel Number: {FavoriteTVShow.ChannelNumber}\n");
+            Console.WriteLine($"{Name}'s favorite TV show is {FavoriteTVShow.Name} on channel {FavoriteTVShow.Channel}");
         }
 
 

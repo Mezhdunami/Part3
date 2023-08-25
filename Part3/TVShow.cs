@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace Part3
 {
-    public class TVShow
+    public struct TVShow
     {
         public string Name { get; set; }
-        public int ChannelNumber { get; set; } 
+        public int Channel { get; set; }
 
-        
 
-        }
     }
+}
+
+
+
+
+
 
 

@@ -9,13 +9,13 @@ class Program
         TVShow show1 = new TVShow
         {
             Name = "Simpsons",
-            ChannelNumber = 36
+            Channel = 36
         };
 
         TVShow show2 = new TVShow
         {
             Name = "Adams Family",
-            ChannelNumber = 69
+            Channel = 69
             
         };
 
@@ -39,7 +39,7 @@ class Program
         person2.PrintShowInfo();
 
         // One day Maria was tired of Simpsons and started to watch Adams Family as well as Tom.
-        person2.SetFavoriteShow(show2);
+        person2.SetFavoriteTVShow(show2);
 
         // Print out Maria's favorite TVshow
         person2.PrintShowInfo();
@@ -55,5 +55,6 @@ class Program
         // And she asked Tom to show his TVshow info. She was very happy when she saw
         // that he still watched his favorite show on channel 69
         person1.PrintShowInfo();
+
     }
 }
