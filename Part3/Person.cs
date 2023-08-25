@@ -12,13 +12,16 @@ namespace Part3
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
+        public static string Email { get; set; }
+
         public static int personCount = 0;
 
-        public Person(string name)
+        public Person(string email)
         {
-            Name = name;
-            personCount++;
+           Email = email;
         }
+
+    
 
 
     }
